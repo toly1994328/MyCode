@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab_add"
+        android:icon="@drawable/icon_add"
+        android:title="add"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_tab_a"
+        android:title="MODE_FIXED"
+        app:showAsAction="never"/>
+
+    <group>
+        <item
+            android:id="@+id/menu_tab_s"
+            android:title="MODE_SCROLLABLE"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/menu_tab_b"
+            android:title="MODE_SCROLLABLE"
+            app:showAsAction="never"/>
+
+    </group>
+</menu>

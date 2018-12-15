@@ -1,0 +1,49 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_root_cl_bnb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FDEF">
+
+    <include layout="@layout/in_pager_home_appbar_top"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_rv_bnb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_fab_b"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/dp_32"
+        android:layout_marginBottom="@dimen/dp_72"
+        android:src="@drawable/icon_tag"
+        app:layout_behavior="@string/behavior_fab_follow"/>
+
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/id_bnb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:bnbBackgroundStyle="background_style_static"
+        app:bnbMode="mode_fixed"
+        app:layout_behavior="@string/followListBehavior"/>
+
+    <include layout="@layout/sheet_bottom"/>
+
+</android.support.design.widget.CoordinatorLayout>

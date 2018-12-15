@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyCode</string>
+    <string name="app_title_name">知无涯</string>
+    <string name="title_android">安卓技术栈</string>
+    <string name="str_open">open</string>
+    <string name="str_close">close</string>
+    <string name="followListBehavior">com.toly1994.mycode.app.behavior.BnbFollowListBehavior</string>
+    <string name="behavior_fab_follow">com.toly1994.mycode.app.behavior.FabFollowListBehavior</string>
+</resources>

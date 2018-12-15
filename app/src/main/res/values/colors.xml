@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="color4Android">#8FC552</color>
+    <color name="color4SpringBoot">#6BFB00</color>
+    <color name="color4React">#63DAFF</color>
+    <color name="color4Note">#F3D861</color>
+    <color name="color4Ser">#5CEBF2</color>
+
+
+
+    <!--妃色-->
+    <color name="feise">#F07054</color>
+    <!--月白-->
+    <color name="yuebai">#DDEFF3</color>
+    <!--牙色-->
+    <color name="yase">#F1E3BC</color>
+    <!--竹青-->
+    <color name="zhuqing">#8CA279</color>
+
+    <!--品橙-->
+    <color name="pincheng">#FF7F47</color>
+    <!--捷特蓝-->
+    <color name="jietelan">#C8D5F7</color>
+
+    <color name="colorBg">#ffffff</color>
+    <color name="colorPlayingText">#FF7F46</color>
+    <!--默认文本颜色-->
+    <color name="colorDefaultText">#363636</color>
+    <!--默认副文本颜色-->
+    <color name="colorDefaultSubText">#898989</color>
+    <color name="colorLine">#D6D6D6</color>
+    <color name="colorProgressBar">#ECE8E7</color>
+</resources>

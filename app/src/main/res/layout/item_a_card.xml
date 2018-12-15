@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:stateListAnimator="@drawable/selector_elevation"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/dp_8"
+        app:cardElevation="@dimen/dp_2"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg_android"/>
+
+            <View
+                android:id="@+id/id_new_tag"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/icon_new"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/id_tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/icon_tag2"
+                android:gravity="center"
+                android:text="安卓绘图"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/iv_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_cover"
+                android:background="#88000000"
+                android:text="《海与鹿王》"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_12"/>
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_cover"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_marginRight="@dimen/dp_8"
+                android:lineSpacingMultiplier="1.2"
+                android:padding="@dimen/dp_2"
+                android:text="作者:张风捷特烈"
+                android:textColor="#757575"
+                android:textSize="@dimen/sp_14"/>
+
+            <ImageView
+                android:id="@+id/id_iv_see"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_below="@id/tv_author"
+                android:layout_alignLeft="@id/tv_author"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@android:color/white"
+                android:src="@drawable/icon_eye"/>
+
+            <TextView
+                android:id="@+id/id_tv_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/id_iv_see"
+                android:layout_toRightOf="@id/id_iv_see"
+                android:background="@android:color/white"
+                android:paddingLeft="@dimen/dp_4"
+                android:text="浏览:3000W"
+                android:textColor="#FF9800"
+                android:textSize="@dimen/sp_12"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
