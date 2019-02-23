@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.toly1994.mycode.R;
@@ -36,7 +37,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
 
         ResultBean.NoteBean note = mData.get(position);
 
-
         if (note.getName().equals(mData.get(0).getName())) {
             holder.mIdNewTag.setVisibility(View.VISIBLE);
         } else {
@@ -47,6 +47,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
         Picasso.get()
                 .load(note.getImgUrl())
                 .into(holder.mIvCover);
+
+        holder.mIvCover.setOnClickListener(v -> {
+            Toast.makeText(mContext, note.getJianshuUrl(), Toast.LENGTH_SHORT).show();
+        });
 
         holder.mIvTvTitle.setText(note.getName());
         holder.mIdTvType.setText(note.getType());

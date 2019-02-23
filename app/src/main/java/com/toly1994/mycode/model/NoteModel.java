@@ -48,7 +48,6 @@ public class NoteModel implements INoteModel<ResultBean.NoteBean> {
                     public void onSubscribe(Disposable d) {
 
                     }
-
                     @Override
                     public void onNext(ResultBean resultBean) {
                         if (callback != null) {
@@ -62,7 +61,6 @@ public class NoteModel implements INoteModel<ResultBean.NoteBean> {
                             callback.onError(ErrorEnum.NET_LINK);
                         }
                     }
-
                     @Override
                     public void onComplete() {
 

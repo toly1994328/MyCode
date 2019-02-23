@@ -6,7 +6,6 @@ import android.net.NetworkInfo;
 
 
 /**
- * Created by 眼神 on 2018/3/27.
  * 网络请求工具类
  */
 public class NetUtil {

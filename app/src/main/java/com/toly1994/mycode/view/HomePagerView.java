@@ -32,7 +32,7 @@ import com.toly1994.mycode.bean.IconItem;
 import com.toly1994.mycode.bean.ResultBean;
 import com.toly1994.mycode.view.adapter.HomeAdapter;
 import com.toly1994.mycode.view.widget.AlphaImageView;
-import com.toly1994.presenter.PagerPresenter;
+import com.toly1994.mycode.presenter.PagerPresenter;
 
 import java.util.List;
 import java.util.Map;
@@ -200,7 +200,6 @@ public class HomePagerView extends AppCompatActivity implements INoteView<Result
     @Override
     public void loaded() {
         mIdSrl.setRefreshing(false);
-
     }
 
     private void findViews() {
